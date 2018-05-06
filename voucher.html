@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voucher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        img {
+            max-width: 70%;
+            height: auto;
+        }
+        body {
+            background: url(https://uspicoop.co.id/voucher/voucher.jpg);
+            background-repeat: no-repeat;
+            background-size: 1000px 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-3">
+            <!-- <button id="reset">reset</button><br> -->
+            <button id="btn1a">1a</button><br>
+            <button id="btn1b">1b</button><br>
+            <button id="btn1c">1c</button><br>
+            <button id="btn1d">1d</button><br>           
+        </div>
+        
+        <div class="col-sm-6">
+            <img id="1a" src="https://uspicoop.co.id/voucher/1a.jpg" alt="9,6" height="20">
+        </div>
+        
+        <div class="col-sm-3"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-3"></div>
+        
+        <div class="col-sm-6">
+            <h3 id="satuB" style="color:red; font-weight: bold;">DSP akan berlaku setelah diaktifasi terlebih dahulu dengan biaya aktifasi Nilai DSP = 0,25%</h3>
+            <h3 id="satuC" style="color:green; font-weight: bold;">Saldo Nilai DSP yang tidak digunakan, setelah tanggal masa berlaku, otomatis akan hangus</h3>
+            <textarea id="satuD" style=
+                "width: 100%; 
+                height: 230px; 
+                padding: 6px 10px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8dc3b;
+                font-size: 16px;
+                resize: none;"
+                >
+Nilai DSP bermanfaat untuk : 
+1. Meningkatkan Penjualan. Nilai DSP diaktifasi menjadi Paket BDJ (Bina Daya Jual),  untuk  dijadikan sebagai   Hadiah  Voucher  Nilai DSP  sebesar = 100% kepada Konsumen / pelanggan. Biaya aktifasi paket BDJ = 2,5%. 
+2. Mendapat Kesempatan bisa memperoleh fasilitas Kredit Tanpa Agunan dan Bunga (KITAB). Dengan mendapat jaminan Hutang Kredit Pasti bisa terlunasi dari hasil menjalankan program ASPI sesuai pilihan sendiri. Biaya aktifasi KiTAB = 8,92% / 12,5%..
+3. Memperoleh Daya Awal Usaha di dalam jejaring ASPI.
+            </textarea>
+        </div>
+
+        <div class="col-sm-3"></div>
+    </div>
+
+
+    <script>
+        $("#1a").hide();
+        $("#satuB").hide();
+        $("#satuC").hide();
+        $("#satuD").hide();
+
+        $("#btn1a").click(function(){
+            $("#1a").fadeIn(3000);
+        })
+        $("#btn1b").click(function(){
+            $("#satuB").fadeIn(3000);
+        })
+        $("#btn1c").click(function(){
+            $("#satuC").fadeIn(3000);
+        })
+        $("#btn1d").click(function(){
+            $("#satuB").hide();
+            $("#satuC").hide();
+            $("#satuD").fadeIn(3000);
+        })
+
+    </script>
+    
+</body>
+</html>
